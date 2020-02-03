@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4207862023E7C6E300416A32 /* PrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4207861F23E7C6E300416A32 /* PrimeCalculator.swift */; };
+		4207862223E7C87600416A32 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4207862123E7C87600416A32 /* CalculatorTests.swift */; };
 		42DDEB6323DE752800BF2892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DDEB6223DE752800BF2892 /* AppDelegate.swift */; };
 		42DDEB6523DE752800BF2892 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DDEB6423DE752800BF2892 /* SceneDelegate.swift */; };
 		42DDEB6723DE752800BF2892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DDEB6623DE752800BF2892 /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4207861F23E7C6E300416A32 /* PrimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculator.swift; sourceTree = "<group>"; };
+		4207862123E7C87600416A32 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		42DDEB5F23DE752800BF2892 /* First.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = First.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DDEB6223DE752800BF2892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42DDEB6423DE752800BF2892 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 				42DDEB8423DE755600BF2892 /* Hater.swift */,
 				42DDEB8623DE767300BF2892 /* Converter.swift */,
 				42DDEB8C23DE80CF00BF2892 /* Remainder.swift */,
+				4207861F23E7C6E300416A32 /* PrimeCalculator.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				42DDEB8A23DE7CF100BF2892 /* LifecycleTests.swift */,
 				42DDEB8E23DE812D00BF2892 /* RemainderTests.swift */,
 				42DDEB9023DE86EA00BF2892 /* ThrowingTests.swift */,
+				4207862123E7C87600416A32 /* CalculatorTests.swift */,
 			);
 			path = FirstTests;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 				42DDEB6723DE752800BF2892 /* ViewController.swift in Sources */,
 				42DDEB8D23DE80CF00BF2892 /* Remainder.swift in Sources */,
 				42DDEB6323DE752800BF2892 /* AppDelegate.swift in Sources */,
+				4207862023E7C6E300416A32 /* PrimeCalculator.swift in Sources */,
 				42DDEB8523DE755600BF2892 /* Hater.swift in Sources */,
 				42DDEB6523DE752800BF2892 /* SceneDelegate.swift in Sources */,
 				42DDEB8723DE767300BF2892 /* Converter.swift in Sources */,
@@ -294,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DDEB8923DE76D400BF2892 /* ConverterTests.swift in Sources */,
+				4207862223E7C87600416A32 /* CalculatorTests.swift in Sources */,
 				42DDEB9123DE86EA00BF2892 /* ThrowingTests.swift in Sources */,
 				42DDEB8F23DE812D00BF2892 /* RemainderTests.swift in Sources */,
 				42DDEB8B23DE7CF100BF2892 /* LifecycleTests.swift in Sources */,
