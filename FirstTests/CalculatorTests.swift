@@ -22,6 +22,7 @@ class CalculatorTests: XCTestCase {
         }
     }
     
+    /*
     func testPrimesUpTo100ShouldBe25() {
         // given
         let maximumCount = 100
@@ -35,7 +36,7 @@ class CalculatorTests: XCTestCase {
         
         wait(for: [expectation], timeout: 10)
     }
-    
+    */
     func testPrimesUpTo100ShouldBe25Array() {
         // given
         let maximumCount = 100
@@ -54,4 +55,22 @@ class CalculatorTests: XCTestCase {
         
         wait(for: [expectation], timeout: 3)
     }
+ 
+    
+    func testPrimesUpTo100ShouldBe25() {
+        // GIVEN
+        let maximumCount = 100
+        
+        // WHEN
+        let progress = PrimeCalculator.calculate(upTo: maximumCount) {
+            XCTAssertEqual($0.count, 25)
+        }
+        
+        // THEN
+        let predicate = NSPredicate(format: "%@.completedUnitCount == %@", argumentArray: [progress, maximumCount])
+        
+        let expectation = XCTNSPredicateExpectation(predicate: predicate, object: progress)
+        wait(for: [expectation], timeout: 10)
+    }
+        
 }
