@@ -12,27 +12,63 @@ import XCTest
 class UserNotificationTests: XCTest {
     
     func testUserUpgradedPostsNotification() {
-       // given
-       let user = User()
-       let expectation = XCTNSNotificationExpectation(name: User.upgradedNotification)
-    // when
-       user.upgrade()
-    // then
-
-        // FIXME: Why is this not being used?
-        XCTWaiter.wait(for: [expectation], timeout: 3)
+        // GIVEN
+        let center = NotificationCenter()
+        let user = User()
+        let expectation = XCTNSNotificationExpectation(name: User.upgradedNotification, object: nil, notificationCenter: center)
+        
+        expectation.handler = { notification -> Bool in
+            guard let level = notification.userInfo?["level"] as? String else {
+                return false
+            }
+            
+            if level == "gold" {
+                return true
+            } else {
+                return false
+            }
+        }
+        
+        // WHEN
+        user.upgrade(using: center)
+        
+        // THEN
+        let result = XCTWaiter.wait(for: [expectation], timeout: 3)
+        XCTAssertEqual(result, .completed)
     }
     
 //    func testUserUpgradedPostsNotification() {
 //        // GIVEN
 //        let user = User()
+//        let waiter = XCTWaiter()
 //        let expectation = XCTNSNotificationExpectation(name: User.upgradedNotification)
+//        expectation.handler = { notification -> Bool in
+//            guard let level = notification.userInfo?["level"] as? String else { return false }
+//
+//            if level == "gold" {
+//                return true
+//            } else {
+//                return false
+//            }
+//        }
 //
 //        // WHEN
 //        user.upgrade()
 //
 //        // THEN
-//        wait(for: [expectation], timeout: 3)
+//        waiter.wait(for: [expectation], timeout: 3)
 //    }
+    
+    //    func testUserUpgradedPostsNotification() {
+    //        // GIVEN
+    //        let user = User()
+    //        let expectation = XCTNSNotificationExpectation(name: User.upgradedNotification)
+    //
+    //        // WHEN
+    //        user.upgrade()
+    //
+    //        // THEN
+    //        wait(for: [expectation], timeout: 3)
+    //    }
 }
 

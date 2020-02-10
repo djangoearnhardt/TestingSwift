@@ -22,11 +22,10 @@ struct User {
     
     static let upgradedNotification = Notification.Name("UserUpgraded")
     
-    func upgrade() {
+    func upgrade(using center: NotificationCenter = NotificationCenter.default) {
         DispatchQueue.global().async {
             Thread.sleep(forTimeInterval: 1)
-            let center = NotificationCenter.default
-            center.post(name: User.upgradedNotification, object: nil)
+            center.post(name: User.upgradedNotification, object: nil, userInfo: ["level": "gold"])
         }
     }
 }
