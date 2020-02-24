@@ -26,6 +26,8 @@
 		82C532C223F0F9EB001A1F56 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C532C123F0F9EB001A1F56 /* User.swift */; };
 		82C532C423F0FA7C001A1F56 /* UserNotifcationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C532C323F0FA7C001A1F56 /* UserNotifcationTests.swift */; };
 		82D5995823E4F97B001E21AA /* AsynchronousTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D5995723E4F97B001E21AA /* AsynchronousTest.swift */; };
+		C647726324038BAC0066A1E1 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = C647726224038BAC0066A1E1 /* House.swift */; };
+		C647726524038F040066A1E1 /* HouseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C647726424038F040066A1E1 /* HouseTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		82D5995523E4F97B001E21AA /* AsynchronousTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsynchronousTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D5995723E4F97B001E21AA /* AsynchronousTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTest.swift; sourceTree = "<group>"; };
 		82D5995923E4F97B001E21AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C647726224038BAC0066A1E1 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		C647726424038F040066A1E1 /* HouseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 				42DDEB8C23DE80CF00BF2892 /* Remainder.swift */,
 				4207861F23E7C6E300416A32 /* PrimeCalculator.swift */,
 				82C532C123F0F9EB001A1F56 /* User.swift */,
+				C647726224038BAC0066A1E1 /* House.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				42DDEB9023DE86EA00BF2892 /* ThrowingTests.swift */,
 				4207862123E7C87600416A32 /* CalculatorTests.swift */,
 				82C532C323F0FA7C001A1F56 /* UserNotifcationTests.swift */,
+				C647726424038F040066A1E1 /* HouseTest.swift */,
 			);
 			path = FirstTests;
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 				82C532C223F0F9EB001A1F56 /* User.swift in Sources */,
 				42DDEB8523DE755600BF2892 /* Hater.swift in Sources */,
 				42DDEB6523DE752800BF2892 /* SceneDelegate.swift in Sources */,
+				C647726324038BAC0066A1E1 /* House.swift in Sources */,
 				42DDEB8723DE767300BF2892 /* Converter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +320,7 @@
 				42DDEB9123DE86EA00BF2892 /* ThrowingTests.swift in Sources */,
 				42DDEB8F23DE812D00BF2892 /* RemainderTests.swift in Sources */,
 				42DDEB8B23DE7CF100BF2892 /* LifecycleTests.swift in Sources */,
+				C647726524038F040066A1E1 /* HouseTest.swift in Sources */,
 				42DDEB7A23DE752900BF2892 /* FirstTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
